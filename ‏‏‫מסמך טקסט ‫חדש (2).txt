@@ -14,6 +14,13 @@
 במחלקת הבן .
 10.הבנאי של מחלקת האב נקרא לפני הבנאי במחלקת הבן .
 11. ממחלקת object.
-12.
+12.(public static bool Equals(Object objA, Object objB);
+public static bool ReferenceEquals(Object objA, Object objB);
+public virtual bool Equals(Object obj);
+public virtual int GetHashCode();
+public Type GetType();
+public virtual string ToString();
+protected Object MemberwiseClone();
+היתרונות בזה הם שכל מחלקה שאי פעם אייצר תירש את הפונקציות שנמצאות במחלקת אובג'קט.
 13.כן  "Every thing is an object "
 14. לאפשר לפונקציה לקבל מערך של ארגומנטים ,דרך comand prompt אפשר למסור לו ערכים חיצוניים.
