@@ -33,10 +33,26 @@ namespace home_work_050720
         static void Main(string[] args)
         {
             Dog Pitbull = new Dog("Roki", "Bonzo");
+         
             Horse Horse1 = new Horse("Robi", false);
+          
             Poodle WhitePoodle = new Poodle("Miki", "Bonzo", "Two");
+           
             Wolf WestrenWolf = new Wolf("Stew", "Sheeps", "R");
+           
             PetWolf NewBorn = new PetWolf("Rick", "Mom's food", "X");
+           
+            Animal[] a = new Animal[3] { Horse1, WhitePoodle, Pitbull };
+           
+            AnimalSing(a);
+            
+            Horse Horse2 = new Horse("KingJ", true);
+           
+            Horse Horse3 = new Horse("Price S", true);
+            
+            Horse[] b = new Horse[3] { Horse1, Horse2, Horse3 };
+           
+            GetRacingHorses(b);
         }
     }
 }
