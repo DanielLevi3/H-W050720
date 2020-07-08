@@ -19,17 +19,29 @@ namespace home_work_050720
             }
         }
         
-        static void GetRacingHorses (Horse[] racingHorses)
+       static Horse[] GetRacingHorses (Horse[] racingHorses)
         {
-            
+            int counter = 0;   
             for(int i = 0; i<racingHorses.Length;i++)
             {
                 if(racingHorses[i]._racingHorse)
                 {
-                    Console.WriteLine(racingHorses[i]);
+                    counter++;
                 }
             }
+            Horse[] Race = new Horse[counter];
+            int index = 0;
+            for (int i = 0; i < racingHorses.Length; i++)
+            {
+                if (racingHorses[i]._racingHorse)
+                {
+                    Race[index] = racingHorses[i];
+                    index++;
+                }
+            }
+            return Race;
         }
+        
         static void Main(string[] args)
         {
             Dog Pitbull = new Dog("Roki", "Bonzo");
